@@ -1,0 +1,11 @@
+scaled_joint_trajectory_controller:
+    exchange_scaling_factor_with_hardware: {
+      type: bool,
+      default_value: false,
+      description: "Flag that mark is hardware supports setting and reading of scaling factor. If set to 'true' corresponding command and state interfaces are created."
+    }
+    speed_scaling_interface_name: {
+      type: string,
+      default_value: "speed_scaling/speed_scaling_factor",
+      description: "Fully qualified name of the speed scaling interface name"
+    }
